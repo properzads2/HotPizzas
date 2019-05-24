@@ -9,6 +9,7 @@ import {
 } from 'semantic-ui-react';
 
 export default () => (
+
   <Grid centered columns={2}>
   
     <Grid.Column>
@@ -23,9 +24,20 @@ export default () => (
      </br>
      <br> 
      </br>
-     
-     
+
+          
         WELCOME TO HOT PIZZA'S 
+
+        <div class="ui five item menu">
+  <a class="item">Sign-In</a>
+  <a class="active item">Menu</a>
+  <a class="item">Customize</a>
+  <a class="item">Checkout</a>
+  <a class="item">Logout</a>
+</div>
+
+<br/>
+
       </Header>
       <Segment>
         <Form size="large">
@@ -55,4 +67,5 @@ export default () => (
     </Grid.Column>
    </Grid> 
   
+ 
 )
