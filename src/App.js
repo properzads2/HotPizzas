@@ -5,6 +5,7 @@ import './App.css';
 import NavBar from './components/NavBar'
 import Menu from './components/Menu'
 import CustomizeMenu from './components/CustomizeMenu'
+import Checkout from './components/Checkout'
 
 
 class App extends Component {
@@ -20,6 +21,7 @@ class App extends Component {
             <NavBar/>
             <Menu/>
             <CustomizeMenu/>
+            <Checkout />
       </div>
     );
   }

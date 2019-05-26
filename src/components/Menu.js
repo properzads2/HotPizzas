@@ -9,11 +9,11 @@ class Menu extends Component {
         </div>
         
         <div class="ui checkbox"> 
-            <input type="checkbox" name="name"/>
+            <input type="checkbox" name="example"></input>
             <br/>
             <br/>
             <br/>
-            <label> Select Pizza</label>          
+            <label> Select Pizza </label>          
         </div>
 
         <div class="ui horizontal divider">
@@ -30,10 +30,10 @@ class Menu extends Component {
         </div>
 
         <div class="ui checkbox"> 
-            <input type="checkbox" name="name" onClick={this.onClick}></input>
+            <input type="checkbox" name="example"></input>
             <br/>
             <br/>
-            <label> Select Pizza</label>
+            <label> Select Pizza </label>
         </div>
 
         <div class="ui horizontal divider">
@@ -45,7 +45,8 @@ class Menu extends Component {
         </div>
 
         <div class="ui raised very padded text container segment">
-            <h2 class="ui header">Order Total: </h2>
+            <h1 class="ui header"> Pizza: </h1>
+            <h2 class="ui header" align="right">Order Total: </h2>
             <button class="ui primary button" align="right">
                     Checkout
             </button>
