@@ -6,7 +6,7 @@ import NavBar from './components/NavBar'
 import Menu from './components/Menu'
 import CustomizeMenu from './components/CustomizeMenu'
 import Checkout from './components/Checkout'
-
+import Maincontainer from './components/Maincontainer'
 
 class App extends Component {
 
@@ -17,11 +17,11 @@ class App extends Component {
   render() {
     return (
       <div> 
-  
-            <NavBar/>
+            <Maincontainer/>
+            {/* <NavBar/>
             <Menu/>
             <CustomizeMenu/>
-            <Checkout />
+            <Checkout /> */}
       </div>
     );
   }

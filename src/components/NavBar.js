@@ -8,7 +8,7 @@ import {
   Segment,
 } from 'semantic-ui-react';
 
-export default () => (
+export default (props) => (
 
   <Grid centered columns={2}>
   
@@ -55,7 +55,7 @@ export default () => (
             type="password"
           />
 
-          <Button color="blue" fluid size="large">
+          <Button color="blue" fluid size="large" onClick={props.loginclick}>
             Login
           </Button>
         </Form>
