@@ -30,6 +30,7 @@ export default (props) => (
 
 <br/>
 
+
       </Header>
       <Segment>
         <Form size="large">
@@ -55,9 +56,17 @@ export default (props) => (
       <Message>
         Not registered yet? <a href="#">Sign Up</a>
       </Message>
-    
+      <div class="ui segment">
+      <img class="ui small left floated image" src="https://feelingfoodish.com/wp-content/uploads/2012/08/New-York-Style-pizza.jpg"></img>
+      <img class="ui centered medium image" src="https://assets3.thrillist.com/v1/image/1887188/size/tmg-venue_carousel_mobile.jpg" width="200"></img>
+      <img class="ui small right floated image" src=""></img>
+      </div>
     </Grid.Column>
-   </Grid> 
-  
+   </Grid>
+
+
+
+) 
+    
+
  
-)

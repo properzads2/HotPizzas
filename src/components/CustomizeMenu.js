@@ -7,7 +7,6 @@ class CustomizeMenu extends Component {
             <div class="ui two column very relaxed grid">
             <div class="column">
                 <h1 align="center"> Customize Your Pizza </h1>
-                <h3 align="center"> Classic Pizza </h3>
                 <img src="https://www.pizzahut.com/assets/w/tile/thor/Cheese.png" align="center"/>
             <br/>
             <br/>
@@ -22,6 +21,9 @@ class CustomizeMenu extends Component {
                     Place Order
             </button>
             </div>
+            <br/>
+            <br/>
+            <img src="https://assets3.thrillist.com/v1/image/1887188/size/tmg-venue_carousel_mobile.jpg" align="center"/>
         </div>
         <div class="column">
             <h1 align="center"> Choose Toppings </h1>
