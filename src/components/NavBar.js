@@ -28,14 +28,6 @@ export default (props) => (
           
         WELCOME TO HOT PIZZA'S 
 
-        <div class="ui five item menu">
-  <a class="item">Sign-In</a>
-  <a class="active item">Menu</a>
-  <a class="item">Customize</a>
-  <a class="item">Checkout</a>
-  <a class="item">Logout</a>
-</div>
-
 <br/>
 
       </Header>

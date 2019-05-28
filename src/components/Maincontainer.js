@@ -21,7 +21,6 @@ show2: true
 }
 }
 
-
 handleLogin=(e)=>{
 
 //console.log("login clicked")
@@ -33,7 +32,6 @@ let password = e.target.parentElement.querySelector("#root > div > div > div > d
 this.setState({
     condition: 2
 })
-
 
 }
 
@@ -66,15 +64,10 @@ this.setState({
     show1: true
 })}
 
-
-
-
-
 console.log(this.state.pizza)
 
 
 }
-
 
 priceCalculator2=(e)=>{
  
@@ -104,10 +97,7 @@ let pzz = {
         
     console.log(this.state.pizza)
     
-
-
 }
-
 
 data=()=>{
     let name = "Pizza Name:"
@@ -130,22 +120,10 @@ data=()=>{
 
     // } 
 
-   
    customize=()=>{
     this.setState({condition: 3})
 
-
    }
-
-
-
-
-
-
-
-
-
-
 
 render(){
 
@@ -160,12 +138,7 @@ if (this.state.condition == 1){
 
     return(
 
-
-
-
 <NavBar loginclick={this.handleLogin}/>
-
-
 
 )
     }
@@ -185,12 +158,8 @@ if (this.state.condition == 1){
      )   
 
 
+        }
+
     }
-
-}
-
-
-
-
 
 }

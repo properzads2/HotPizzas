@@ -9,6 +9,19 @@ class CustomizeMenu extends Component {
                 <h1 align="center"> Customize Your Pizza </h1>
                 <h3 align="center"> Classic Pizza </h3>
                 <img src="https://www.pizzahut.com/assets/w/tile/thor/Cheese.png" align="center"/>
+            <br/>
+            <br/>
+            <br/>
+            <div class="ui raised very padded text container segment">
+            <h2 align="center"> Checkout </h2>
+            <h2 align="left"> Order Details</h2>
+            <h2 class="ui header"> Pizza Type: Customizable </h2>
+            <h3 class="ui header"> Toppings: </h3>
+            <h2 class="ui header" align="right">Order Total: </h2>
+            <button class="ui primary button" align="right">
+                    Place Order
+            </button>
+            </div>
         </div>
         <div class="column">
             <h1 align="center"> Choose Toppings </h1>
