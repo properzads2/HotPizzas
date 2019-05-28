@@ -1,4 +1,12 @@
 import React, {Component} from 'react'
+import pizza from './pizza.png'
+import pizza2 from './pizza2.jpg'
+import pizza3 from './pizza3.jpg'
+import pizza4 from './pizza4.jpg'
+import pizza5 from './pizza5.jpg'
+import pizza6 from './pizza6.jpg'
+import pizza7 from './pizza7.jpg'
+
 
 class Menu extends Component {
     
@@ -12,7 +20,8 @@ class Menu extends Component {
 
         return (
     <div>
-        <div class="ui segment">
+        <div class="ui segment"style={{ backgroundImage: `url(${pizza})`, backgroundSize: 'cover',
+             backgroundRepeat: 'no-repeat' }}>
             <div class="ui two column very relaxed grid">
         </div>
         
@@ -29,7 +38,8 @@ class Menu extends Component {
 
 
 
-        <div class="ui horizontal divider">
+        <div class="ui horizontal divider"style={{ backgroundImage: `url(${pizza})`, backgroundSize: 'cover',
+              }}>
             <h1 align="center"> Menu </h1>
             <p> Veggie Pizza </p>
             <p align="right"> $ 5.99 </p>

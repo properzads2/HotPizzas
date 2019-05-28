@@ -7,7 +7,7 @@ import Menu from './components/Menu'
 import CustomizeMenu from './components/CustomizeMenu'
 import Checkout from './components/Checkout'
 import Maincontainer from './components/Maincontainer'
-
+import pizza from './pizza.png'
 class App extends Component {
 
   handleClick= () => {
@@ -16,14 +16,16 @@ class App extends Component {
 
   render() {
     return (
-      <div> 
+      // <div style={{ backgroundImage: `url(${pizza})`, backgroundSize: 'cover',
+      // backgroundRepeat: 'no-repeat' }}>
+
+      <div>
             <Maincontainer/>
-            {/* <NavBar/>
-            <Menu/>
-            <CustomizeMenu/>
-            <Checkout /> */}
+           
       </div>
-    );
+    
+
+    )
   }
 }
 
