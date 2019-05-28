@@ -30,6 +30,7 @@ class Menu extends Component {
 
 
         <div class="ui horizontal divider">
+            <h1 align="center"> Menu </h1>
             <p> Veggie Pizza </p>
             <p align="right"> $ 5.99 </p>
             <img src="https://dc8l3mwto1qll.cloudfront.net/assets/munch_images/rnyqn03734/veggie-lover-s-pizza.jpg" align="center"/>
@@ -76,7 +77,8 @@ class Menu extends Component {
                 <input type="checkbox" onChange={this.props.price2} name="example"></input>
                 <label> Select </label>
                 </div>
-                
+               <br/>
+               <br/> 
                <p><button class="ui primary button" onClick={this.props.custom}>
                   CUSTOMIZE IT  
             </button></p>
