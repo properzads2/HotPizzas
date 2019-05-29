@@ -53,7 +53,7 @@ export default (props) => (
         </Form>
       </Segment>
       <Message>
-        Not registered yet? <a href="#">Sign Up</a>
+        Not registered yet? <Button color="blue" fluid size="large" onClick={props.sign}>Sign Up</Button>
       </Message>
     
     </Grid.Column>
