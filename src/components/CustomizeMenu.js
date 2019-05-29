@@ -43,8 +43,8 @@ class CustomizeMenu extends Component {
         </div>
         {/* <div class="column"> */}
         <div class="column">
-            <h1 align="center"> Choose Toppings </h1>
-            <h3 align="left"> Each Topping added is $0.50.</h3>
+            <h1 align="center"> Choose Extra Toppings </h1>
+            <h3 align="left"> Each Extra Topping added is $0.50.</h3>
             <h2 align="center"> Veggies </h2>
             <h3> Olives </h3>
             <img src="https://www.pizzahut.com/assets/w/evo_pb/sidebar/icon_topping_Olive_black.png"/>
