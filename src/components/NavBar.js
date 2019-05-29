@@ -26,7 +26,7 @@ export default (props) => (
      </br>
 
           
-        WELCOME TO HOT PIZZA'S 
+     <font color="red"> WELCOME TO HOT PIZZA'S </font>
 
 <br/>
 
