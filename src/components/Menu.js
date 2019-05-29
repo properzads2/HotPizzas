@@ -10,13 +10,8 @@ import veggie from './veggie.png'
 
 class Menu extends Component {
     
-    
-    
     render() {
       console.log(this.props.pizza)
-
-
-
 
         return (
     <div>
@@ -33,25 +28,22 @@ class Menu extends Component {
             <label> Select Pizza </label>          
         </div> */}
 
-        
-
-
-
-
         <div class="ui horizontal divider"style={{ backgroundImage: `url(${pizza})`, backgroundSize: 'cover',
               }}>
+
             <h1 align="center"> Menu </h1>
             <p> Veggie Pizza </p>
             <p align="right"> $ 5.99 </p>
             <img src={veggie} align="center"/>
             <p> Green Peppers, Red Onions, Diced Tomatoes, and Black Olives </p>
+
             <br/>
             <br/>
             <br/>
 
             <div class="ui checkbox">
                 <input type="checkbox" onChange={this.props.price} name="example" unchecked></input>
-                <label> Select </label>
+                <label> <font color="cyan"> Select </font> </label>
                 </div> 
 
                 {/* <select name="cars">
@@ -65,10 +57,6 @@ class Menu extends Component {
             <br/>
             <br/>
 
-
-
-
-
         </div>
 
         {/* <div class="ui checkbox"> 
@@ -79,26 +67,22 @@ class Menu extends Component {
         </div> */}
 
         <div class="ui horizontal divider">
-            <p> Meat Pizza </p>
-            <p align="right"> $7.99</p>
+            <p> <font color="cyan"> Meat Pizza </font> </p>
+            <p align="right"> <font color="cyan"> $7.99 </font> </p>
             <img src="https://www.pizzahut.com/assets/w/tile/thor/Classic_Meat_Lovers_Pizza.png" align="center"/>
-            <p> Pepperoni, Sausage, Beef, and Pork </p>
+            <p> <font color="cyan"> Pepperoni, Sausage, Beef, and Chicken </font> </p>
             <div class="ui checkbox">
                 <input type="checkbox" onChange={this.props.price2} name="example"></input>
-                <label> Select </label>
+                <label> <font color="cyan"> Select  </font> </label>
                 </div>
                <br/>
                <br/> 
                <p><button class="ui primary button" onClick={this.props.custom}>
                   CUSTOMIZE  
             </button></p>
-
-            
-        
             
             </div>
-        
-               
+          
         </div>
         <p>
          </p>   
@@ -110,14 +94,9 @@ class Menu extends Component {
 
 </ul>
 
-        
-
-
-
-
              </h1>
                                
-                <h2 class="ui header" align="right">Order Total: {this.props.total} </h2>
+            <h2 class="ui header" align="right">Order Total: {this.props.total} </h2>
             <button class="ui primary button" align="right">
                     Place Order
             </button>
@@ -128,6 +107,7 @@ class Menu extends Component {
 }
 
 export default Menu
+
 
 
 
