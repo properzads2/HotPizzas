@@ -6,7 +6,8 @@ import { get } from 'https';
 import CustomizeMenu from './CustomizeMenu'
 import PlaceOrder from './PlaceOrder'
 import blank from './pizza7.jpg'
-
+import Signup from './Signup'
+import { tsConstructSignatureDeclaration } from '@babel/types';
 export default class Maincontainer extends Component {
 constructor(){
 super()
@@ -27,7 +28,8 @@ sausage:true,
 beef:true,
 chicken:true,
 toppings:[],
-customizeTotal: 7.99
+customizeTotal: 7.99,
+user: []
 }
 }
 
@@ -42,6 +44,56 @@ let password = e.target.parentElement.querySelector("#root > div > div > div > d
 this.setState({
     condition: 2
 })
+
+}
+
+
+signup=(e)=>{
+console.log("this is singup")
+this.setState({
+   condition: 5 
+})
+}
+
+submit=(e)=>{
+
+console.log("submit")
+console.log(e.target.parentElement)
+ let email =(document.querySelector("#root > div > form > div:nth-child(10) > input[type=text]").value)
+ let password = (document.querySelector("#root > div > form > div:nth-child(12) > input[type=password]").value)
+ let firstname =(document.querySelector("#root > div > form > div:nth-child(14) > input[type=text]").value)
+ let lastname =(document.querySelector("#root > div > form > div:nth-child(16) > input[type=text]").value)
+ let address = (document.querySelector("#root > div > form > div:nth-child(18) > input[type=text]").value)
+ console.log('loggggggg',email,password,firstname,lastname,address)
+
+ let newUser ={
+  email: email,
+  password: password,
+  firstname: firstname,
+  lastname: lastname,
+  address: address   
+ }
+
+
+ 
+// fetch('http://localhost:3000/users',{
+//     method:'POST',  
+//     headers:{
+//         'Content-Type':'application/json'
+//     },
+//     body: JSON.stringify(temp)
+// })
+// .then(response=>{
+//     debugger;
+//     console.log(response.json())
+// })
+//   .then(data=>console.log(data))
+  
+ this.setState({
+     user: newUser,
+     condition: 1
+ })
+ console.log(this.state.user)
 
 }
 
@@ -61,7 +113,7 @@ price: 5.99
 }
 let newPizza = this.state.pizza
 newPizza.push(pzz)
-this.setState({
+this.setState({     
     pizza: newPizza,
     total: this.state.total + 5.99,
     show1: false
@@ -697,7 +749,7 @@ if (this.state.condition == 1){
 
     return(
 
-<NavBar loginclick={this.handleLogin}/>
+<NavBar loginclick={this.handleLogin} sign={this.signup}/>
 
 )
     }
@@ -727,7 +779,13 @@ if (this.state.condition == 1){
        
        
                }
+               if (this.state.condition == 5){
+                return (
+                <Signup submit={this.submit}/>    
+                )   
            
+           
+                   }   
 
     }
 

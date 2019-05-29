@@ -1,25 +1,81 @@
 import React, {Component} from 'react'
+import { Form, Input, TextArea, Button, Select } from 'semantic-ui-react'
+import { Divider, Label } from 'semantic-ui-react'
 
 class SignUp extends Component {
-    render() {
+    constructor(){
+
+    super()    
+    
+    
+      
+       
+    }
+        
+
+
+    render()
+    
+    
+    
+    {
         return (
-        <div class="ui form">
-            <div class="field">
-                <label>Name</label>
-                <input type="text"/>
+            <Form>
+            <br>
+            </br>
+            <br>
+            </br>
+            <br>
+            </br>
+            <br>
+            </br>
+            <br>
+            </br>
+            <br>
+            </br>
+            <Label font size='massive' color='red' pointing='down'>HOT PIZZA Sign up Page</Label>
+            <br>
+            </br>
+            <br>
+            </br>
+            <Form.Field inline>
+              <input type='text' placeholder='Email' />
+              <Label pointing='left'>Email!</Label>
+            </Form.Field>
+            <Divider />
+        
+            <Form.Field inline>
+              <Label pointing='right'>Your password must be 6 characters or more</Label>
+              <input type='password' placeholder='Password' />
+            </Form.Field>
+            <Divider />
+            <Form.Field inline>
+              <input type='text' placeholder='First Name' />
+              <Label pointing='left'>First Name!</Label>
+            </Form.Field>
+            <Divider />
+            <Form.Field inline>
+            <Label pointing='right'>Last Name!</Label>
 
-                <label>Email</label>
-                <input type="email"/>
+              <input type='text' placeholder='Last Name' />
+            </Form.Field>
+            <Divider />
+            <Form.Field inline>
 
-                <label>Address</label>
-                <input type="text"/>
+              <input type='text' size='50' placeholder='Address' />
+              <Label pointing='left'>Address</Label>
 
-                <label>Card Number</label>
-                <input type="number"/>
+            </Form.Field>
+        
 
-                <button> Register </button>
-            </div>
-        </div>
+            <Form.Button onClick={(e)=>this.props.submit(e)}>Submit</Form.Button>
+            <Label font size='massive' color='red' pointing='down'>HOT PIZZA => THE HOTTEST PIZZA IN TOWN</Label>
+
+          </Form>         
+
+            
+
+        
         )
     }
 }

@@ -6,7 +6,7 @@ import pizza4 from './pizza4.jpg'
 import pizza5 from './pizza5.jpg'
 import pizza6 from './pizza6.jpg'
 import pizza7 from './pizza7.jpg'
-
+import veggie from './veggie.png'
 
 class Menu extends Component {
     
@@ -43,7 +43,7 @@ class Menu extends Component {
             <h1 align="center"> Menu </h1>
             <p> Veggie Pizza </p>
             <p align="right"> $ 5.99 </p>
-            <img src="https://dc8l3mwto1qll.cloudfront.net/assets/munch_images/rnyqn03734/veggie-lover-s-pizza.jpg" align="center"/>
+            <img src={veggie} align="center"/>
             <p> Green Peppers, Red Onions, Diced Tomatoes, and Black Olives </p>
             <br/>
             <br/>
@@ -129,3 +129,6 @@ class Menu extends Component {
 
 export default Menu
 
+
+
+{/* <img src="https://www.pizzahut.com/assets/w/tile/thor/Classic_Meat_Lovers_Pizza.png" align="center"/> */}
