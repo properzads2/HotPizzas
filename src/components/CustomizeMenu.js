@@ -76,13 +76,11 @@ base.onload = () => {
   
         </div>
         {/* <div class="column"> */}
-        
-        <div class="column" align="left"> 
-    
-             
 
-            <h1 align="center"> Choose Toppings </h1>
+        <div class="column" align="left">         
+            <h1 align="center"> Choose Extra Toppings </h1>
             <h3 align="left"> Each Topping added is $0.50.</h3>
+
             <h2 align="center"> Veggies </h2>
             
             <h3> Olives </h3>

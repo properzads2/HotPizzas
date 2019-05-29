@@ -90,7 +90,7 @@ class Menu extends Component {
                <br/>
                <br/> 
                <p><button class="ui primary button" onClick={this.props.custom}>
-                  CUSTOMIZE IT  
+                  CUSTOMIZE  
             </button></p>
 
             
@@ -119,7 +119,7 @@ class Menu extends Component {
                                
                 <h2 class="ui header" align="right">Order Total: {this.props.total} </h2>
             <button class="ui primary button" align="right">
-                    Checkout
+                    Place Order
             </button>
         </div>
     </div>
