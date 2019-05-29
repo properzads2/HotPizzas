@@ -6,6 +6,7 @@ import { get } from 'https';
 import CustomizeMenu from './CustomizeMenu'
 import PlaceOrder from './PlaceOrder'
 import blank from './pizza7.jpg'
+import SignUp from './SignUp.JS'
 
 export default class Maincontainer extends Component {
 constructor(){
@@ -246,10 +247,6 @@ handleOlives=(e,canvas,img,blank)=>{
          ctx.drawImage(img,145,120,30,30)    // 25 add to x
          ctx.drawImage(img,155,125,30,30)    // 25 add to y
    
-        
-        
-        
-        
         }
             else {
                 let x = this.state.toppings.filter(toop=>toop.name!="Diced Tomatoes")
@@ -534,14 +531,6 @@ ctx.drawImage(img,155,150,30,30) // 25 add to y
                                 ctx.drawImage(img,245,140,30,30) // 25 add to x
                                 ctx.drawImage(img,270,120,30,30) // 25 add to x
                                 ctx.drawImage(img,180,225,30,30) // 25 add to y
-                                
-                            
-                            
-                            
-                            
-                            
-                            
-                            
                             
                             }
                                 else {

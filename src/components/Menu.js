@@ -68,7 +68,7 @@ class Menu extends Component {
             <p> <font color="cyan"> Meat Pizza </font> </p>
             <p align="right"> <font color="cyan"> $7.99 </font> </p>
             <img src="https://www.pizzahut.com/assets/w/tile/thor/Classic_Meat_Lovers_Pizza.png" align="center"/>
-            <p> <font color="cyan"> Pepperoni, Sausage, Beef, and Pork </font> </p>
+            <p> <font color="cyan"> Pepperoni, Sausage, Beef, and Chicken </font> </p>
             <div class="ui checkbox">
                 <input type="checkbox" onChange={this.props.price2} name="example"></input>
                 <label> <font color="cyan"> Select  </font> </label>
@@ -80,8 +80,7 @@ class Menu extends Component {
             </button></p>
             
             </div>
-        
-               
+          
         </div>
         <p>
          </p>   

@@ -37,9 +37,6 @@ base.onload = () => {
 }
     }
 
-
-
-
     render() {
         return (
         <div class="ui segment">
@@ -51,7 +48,6 @@ base.onload = () => {
              backgroundRepeat: 'no-repeat' }}>
                  
                 <h1 align="center"> Customize Your Pizza </h1>
-                <h3 align="center"> Classic Pizza </h3>
             <br/>
             <br/>
             <br/>
@@ -79,7 +75,7 @@ base.onload = () => {
 
         <div class="column" align="left">         
             <h1 align="center"> Choose Extra Toppings </h1>
-            <h3 align="left"> Each Topping added is $0.50.</h3>
+            <h3 align="left"> Each Extra Topping Added is $0.50 each</h3>
 
             <h2 align="center"> Veggies </h2>
             
@@ -88,7 +84,7 @@ base.onload = () => {
             
             <div class="ui checkbox">
                 <input type="checkbox"  onChange={(e)=>this.props.olives(e,this.refs.canvas,this.refs.olives,this.refs.blank)} name="example"></input>
-                <label> Select </label>
+                <label> <b> SELECT </b> </label>
                 </div>
             
             <h3> Diced Tomatoes </h3>
@@ -96,14 +92,14 @@ base.onload = () => {
             
             <div class="ui checkbox">
                 <input type="checkbox" onChange={(e)=>this.props.tomatoes(e,this.refs.canvas,this.refs.tomatoes)} name="example"></input>
-                <label> Select </label>
+                <label> <b> SELECT </b> </label>
                 </div>
 
             <h3> Red Onions </h3>
             <img ref="onions"src="https://www.pizzahut.com/assets/w/evo_pb/sidebar/icon_topping_Onion_Red.png"/>
             <div class="ui checkbox">
                 <input type="checkbox" onChange={(e)=>this.props.onions(e,this.refs.canvas,this.refs.onions)} name="example"></input>
-                <label> Select </label>
+                <label> <b> SELECT </b> </label>
                 </div>
 
             <h3> Green Peppers </h3>
@@ -111,7 +107,7 @@ base.onload = () => {
             
             <div class="ui checkbox">
                 <input type="checkbox" onChange={(e)=>this.props.greenpeper(e,this.refs.canvas,this.refs.green)} name="example"></input>
-                <label> Select </label>
+                <label> <b> SELECT </b> </label>
                 </div>            
             
             <h2 align="center"> Meat </h2>
@@ -120,7 +116,7 @@ base.onload = () => {
             
             <div class="ui checkbox">
                 <input type="checkbox" onChange={(e)=>this.props.peperoni(e,this.refs.canvas,this.refs.peperoni)} name="example"></input>
-                <label> Select </label>
+                <label> <b> SELECT </b> </label>
                 </div>
 
             <h3> Sausage </h3>
@@ -128,7 +124,7 @@ base.onload = () => {
             
             <div class="ui checkbox">
                 <input type="checkbox" onChange={(e)=>this.props.sausage(e,this.refs.canvas,this.refs.sausage)} name="example"></input>
-                <label> Select </label>
+                <label> <b> SELECT </b> </label>
                 </div>
 
             <h3> Beef </h3>
@@ -136,7 +132,7 @@ base.onload = () => {
             
             <div class="ui checkbox">
                 <input type="checkbox" onChange={(e)=>this.props.beef(e,this.refs.canvas,this.refs.beef)} name="example"></input>
-                <label> Select </label>
+                <label> <b> SELECT </b> </label>
                 </div>
 
             <h3> Chicken </h3>
@@ -144,7 +140,7 @@ base.onload = () => {
             
             <div class="ui checkbox">
                 <input type="checkbox" onChange={(e)=>this.props.chicken(e,this.refs.canvas,this.refs.chicken)} name="example"></input>
-                <label> Select </label>
+                <label> <b> SELECT </b> </label>
                 </div>
 
         </div>
@@ -154,7 +150,6 @@ base.onload = () => {
 
          <img ref="cheese" src="https://www.pizzahut.com/assets/w/tile/thor/Cheese.png"  height="1" width="1" align="left"/>
          <img ref="blank" src={blank}  align="left"/>
-
 
         </div>
     </div>
