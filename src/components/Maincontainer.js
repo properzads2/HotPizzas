@@ -374,14 +374,6 @@ handleOlives=(e)=>{
          return (x)
               }}  
 
-
-
-
-
-
-
-
-
 data=()=>{
     let name = "Pizza Name:"
     let price = "Price:"
@@ -403,12 +395,6 @@ data=()=>{
 
     // } 
 
-   
-
-
-
-
-
    customize=()=>{
     this.setState({condition: 3})
 
@@ -418,8 +404,6 @@ data=()=>{
     this.setState({condition: 4})
 
   }
-
-
 
 render(){
 
