@@ -5,6 +5,7 @@ import Menu from './Menu'
 import { get } from 'https';
 import CustomizeMenu from './CustomizeMenu'
 import PlaceOrder from './PlaceOrder'
+import blank from './pizza7.jpg'
 
 export default class Maincontainer extends Component {
 constructor(){
@@ -108,12 +109,12 @@ let pzz = {
     
 }
 
-handleOlives=(e)=>{
- 
+handleOlives=(e,canvas,img,blank)=>{
+    console.log(canvas)
     //let pizza = e.target.parentElement.parentElement.querySelector("#root > div > div > div:nth-child(1) > div:nth-child(3) > p:nth-child(1)").innerText
     //let price = e.target.parentElement.parentElement.querySelector("#root > div > div > div:nth-child(1) > div:nth-child(3) > p:nth-child(2)").innerText
     if (this.state.olive == true){
-        console.log("this is clicking")
+        console.log(img)
 
     let newTop = {
         name: "Olives",
@@ -125,21 +126,83 @@ handleOlives=(e)=>{
             toppings: newToppings,
             customizeTotal: this.state.customizeTotal + 0.50,
             olive: false
-        })}
+        })
+    
+       // const canvas = this.refs.canvas
+        const ctx = canvas.getContext("2d")
+        
+      //  img.onload = () => {
+          //  ctx.drawImage(img, 90,90,230,230)
+          ctx.drawImage(img,190,100,30,30)
+          ctx.drawImage(img,230,100,30,30)
+          ctx.drawImage(img,270,100,30,30)     
+          ctx.drawImage(img,310,120,30,30) 
+          ctx.drawImage(img,350,160,30,30) 
+          ctx.drawImage(img,350,200,30,30) 
+         ctx.drawImage(img,350,240,30,30) 
+         ctx.drawImage(img,340,270,30,30) 
+         ctx.drawImage(img,290,310,30,30) 
+         ctx.drawImage(img,250,330,30,30)    
+         ctx.drawImage(img,220,330,30,30)
+         ctx.drawImage(img,180,330,30,30)
+         ctx.drawImage(img,140,330,30,30) 
+         ctx.drawImage(img,115,310,30,30)
+         ctx.drawImage(img,90,290,30,30) 
+         ctx.drawImage(img,80,270,30,30)   
+         ctx.drawImage(img,70,230,30,30)
+         ctx.drawImage(img,70,190,30,30)    
+         ctx.drawImage(img,95,140,30,30) 
+         ctx.drawImage(img,125,120,30,30) 
+         ctx.drawImage(img,155,100,30,30)   
+   
+    //}
+    }
         else {
             let x = this.state.toppings.filter(toop=>toop.name!="Olives")
             this.setState({
                 toppings: x,
                 customizeTotal: this.state.customizeTotal - 0.50,
                 olive: true
-            })}
+            })
+        //     const ctx = canvas.getContext("2d")
+        //     ctx.drawImage(blank,190,100,15,15)
+        //   ctx.drawImage(blank,230,100,15,15)
+        //   ctx.drawImage(blank,270,100,15,15)     
+        //   ctx.drawImage(blank,310,120,15,15) 
+        //   ctx.drawImage(blank,350,160,15,15) 
+        //   ctx.drawImage(blank,350,200,15,15) 
+        //  ctx.drawImage(blank,350,240,15,15) 
+        //  ctx.drawImage(blank,340,270,15,15) 
+        //  ctx.drawImage(blank,290,310,15,15) 
+        //  ctx.drawImage(blank,250,330,15,15)    
+        //  ctx.drawImage(blank,220,330,30,30)
+        //  ctx.drawImage(blank,180,330,30,30)
+        //  ctx.drawImage(blank,140,330,30,30) 
+        //  ctx.drawImage(blank,115,310,30,30)
+        //  ctx.drawImage(blank,90,290,30,30) 
+        //  ctx.drawImage(blank,80,270,30,30)   
+        //  ctx.drawImage(blank,70,230,30,30)
+        //  ctx.drawImage(blank,70,190,30,30)    
+        //  ctx.drawImage(blank,95,140,30,30) 
+        //  ctx.drawImage(blank,125,120,30,30) 
+        //  ctx.drawImage(blank,155,100,30,30)   
+   
+        // ctx.rect(60, 60, 300, 300);
+        // ctx.rect(60, 60, 100, 100);
+        // ctx.fillStyle = 'green';
+        // ctx.fill()
+      //  ctx.fillStyle="red";
+//ctx.clearRect(90,90,230,230);
+    
+        
+        }
             
        // console.log(this.state.toppings)
        // console.log(this.state.customizeTotal)
         
     }
 
-    handleTomatoes=(e)=>{
+    handleTomatoes=(e,canvas,img)=>{
  
         //let pizza = e.target.parentElement.parentElement.querySelector("#root > div > div > div:nth-child(1) > div:nth-child(3) > p:nth-child(1)").innerText
         //let price = e.target.parentElement.parentElement.querySelector("#root > div > div > div:nth-child(1) > div:nth-child(3) > p:nth-child(2)").innerText
@@ -156,7 +219,38 @@ handleOlives=(e)=>{
                 toppings: newToppings,
                 customizeTotal: this.state.customizeTotal + 0.50,
                 tomatoes: false
-            })}
+            })
+            const ctx = canvas.getContext("2d")
+        
+      //  img.onload = () => {
+          //  ctx.drawImage(img, 90,90,230,230)
+          ctx.drawImage(img,190,125,30,30)  // 25 add y
+          ctx.drawImage(img,230,125,30,30)  // 25 add y
+          ctx.drawImage(img,270,125,30,30)  // 25 add y  
+          ctx.drawImage(img,310,145,30,30)  // 25 add y
+          ctx.drawImage(img,325,160,30,30) //-25 from x
+          ctx.drawImage(img,325,200,30,30) //-25 from x
+         ctx.drawImage(img,325,240,30,30)  //-25 from x
+         ctx.drawImage(img,315,270,30,30)  //-25 from x
+         ctx.drawImage(img,265,310,30,30)  // -25 from x 
+         ctx.drawImage(img,250,305,30,30)  // -25 from x   
+         ctx.drawImage(img,220,305,30,30)  // -25 from y
+         ctx.drawImage(img,180,305,30,30)  // -25 from y
+         ctx.drawImage(img,140,305,30,30)  // -25 from y
+         ctx.drawImage(img,115,285,30,30)  // -25 from y 
+         ctx.drawImage(img,115,290,30,30)   // 25 add to x 
+         ctx.drawImage(img,105,270,30,30)   // 25 add to  x 
+         ctx.drawImage(img,95,230,30,30)    // 25 add to x 
+         ctx.drawImage(img,95,190,30,30)    // 25 add to x
+         ctx.drawImage(img,120,140,30,30)    // 25 add to x 
+         ctx.drawImage(img,145,120,30,30)    // 25 add to x
+         ctx.drawImage(img,155,125,30,30)    // 25 add to y
+   
+        
+        
+        
+        
+        }
             else {
                 let x = this.state.toppings.filter(toop=>toop.name!="Diced Tomatoes")
                 this.setState({
@@ -170,7 +264,7 @@ handleOlives=(e)=>{
             
         }
     
-        handleOnions=(e)=>{
+        handleOnions=(e,canvas,img)=>{
  
             //let pizza = e.target.parentElement.parentElement.querySelector("#root > div > div > div:nth-child(1) > div:nth-child(3) > p:nth-child(1)").innerText
             //let price = e.target.parentElement.parentElement.querySelector("#root > div > div > div:nth-child(1) > div:nth-child(3) > p:nth-child(2)").innerText
@@ -187,7 +281,34 @@ handleOlives=(e)=>{
                     toppings: newToppings,
                     customizeTotal: this.state.customizeTotal + 0.50,
                     redonions: false
-                })}
+                })
+            
+                const ctx = canvas.getContext("2d")
+ctx.drawImage(img,190,150,30,30) // 25 add y
+ctx.drawImage(img,230,150,30,30) // 25 add y
+ctx.drawImage(img,270,150,30,30) // 25 add y
+ctx.drawImage(img,310,170,30,30) // 25 add y
+ctx.drawImage(img,300,160,30,30) //-25 from x
+ctx.drawImage(img,300,200,30,30) //-25 from x
+ctx.drawImage(img,300,240,30,30) //-25 from x
+ctx.drawImage(img,290,270,30,30) //-25 from x
+ctx.drawImage(img,240,310,30,30) // -25 from x
+ctx.drawImage(img,225,305,30,30) // -25 from x
+ctx.drawImage(img,220,285,30,30) // -25 from y
+ctx.drawImage(img,180,280,30,30) // -25 from y
+ctx.drawImage(img,140,280,30,30) // -25 from y
+ctx.drawImage(img,115,260,30,30) // -25 from y
+ctx.drawImage(img,140,290,30,30) // 25 add to x
+ctx.drawImage(img,130,270,30,30) // 25 add to x
+ctx.drawImage(img,120,230,30,30) // 25 add to x
+ctx.drawImage(img,120,190,30,30) // 25 add to x
+ctx.drawImage(img,145,140,30,30) // 25 add to x
+ctx.drawImage(img,170,120,30,30) // 25 add to x
+ctx.drawImage(img,155,150,30,30) // 25 add to y
+            
+            
+            
+            }
                 else {
                     let x = this.state.toppings.filter(toop=>toop.name!="Red Onions")
                     this.setState({
@@ -201,7 +322,7 @@ handleOlives=(e)=>{
                 
             }
         
-            handleGreenpeper=(e)=>{
+            handleGreenpeper=(e,canvas,img)=>{
  
                 //let pizza = e.target.parentElement.parentElement.querySelector("#root > div > div > div:nth-child(1) > div:nth-child(3) > p:nth-child(1)").innerText
                 //let price = e.target.parentElement.parentElement.querySelector("#root > div > div > div:nth-child(1) > div:nth-child(3) > p:nth-child(2)").innerText
@@ -218,7 +339,34 @@ handleOlives=(e)=>{
                         toppings: newToppings,
                         customizeTotal: this.state.customizeTotal + 0.50,
                         greenpeper: false
-                    })}
+                    })
+
+                    const ctx = canvas.getContext("2d")
+
+                    ctx.drawImage(img,190,175,30,30) // 25 add y
+                    ctx.drawImage(img,230,175,30,30) // 25 add y
+                        ctx.drawImage(img,270,175,30,30) // 25 add y
+                        ctx.drawImage(img,310,195,30,30) // 25 add y
+                        ctx.drawImage(img,275,160,30,30) //-25 from x
+                        ctx.drawImage(img,275,200,30,30) //-25 from x
+                        ctx.drawImage(img,275,240,30,30) //-25 from x
+                        ctx.drawImage(img,265,270,30,30) //-25 from x
+                        ctx.drawImage(img,215,310,30,30) // -25 from x
+                        ctx.drawImage(img,200,305,30,30) // -25 from x
+                        ctx.drawImage(img,220,260,30,30) // -25 from y
+                        ctx.drawImage(img,180,255,30,30) // -25 from y
+                        ctx.drawImage(img,140,255,30,30) // -25 from y
+                        ctx.drawImage(img,115,235,30,30) // -25 from y
+                        ctx.drawImage(img,165,290,30,30) // 25 add to x
+                        ctx.drawImage(img,155,270,30,30) // 25 add to x
+                        ctx.drawImage(img,145,230,30,30) // 25 add to x
+                        ctx.drawImage(img,145,190,30,30) // 25 add to x
+                        ctx.drawImage(img,170,140,30,30) // 25 add to x
+                        ctx.drawImage(img,195,120,30,30) // 25 add to x
+                        ctx.drawImage(img,180,150,30,30) // 25 add to y    
+                
+                
+                }
                     else {
                         let x = this.state.toppings.filter(toop=>toop.name!="Green Peper")
                         this.setState({
@@ -231,7 +379,7 @@ handleOlives=(e)=>{
                    // console.log(this.state.customizeTotal)
                     
                 }
-                handlePeperoni=(e)=>{
+                handlePeperoni=(e,canvas,img)=>{
  
                     //let pizza = e.target.parentElement.parentElement.querySelector("#root > div > div > div:nth-child(1) > div:nth-child(3) > p:nth-child(1)").innerText
                     //let price = e.target.parentElement.parentElement.querySelector("#root > div > div > div:nth-child(1) > div:nth-child(3) > p:nth-child(2)").innerText
@@ -248,7 +396,33 @@ handleOlives=(e)=>{
                             toppings: newToppings,
                             customizeTotal: this.state.customizeTotal + 0.50,
                             peperoni: false
-                        })}
+                        })
+                        const ctx = canvas.getContext("2d")
+                        ctx.drawImage(img,190,200,30,30) // 25 add y
+                        ctx.drawImage(img,230,200,30,30) // 25 add y
+                        ctx.drawImage(img,270,200,30,30) // 25 add y
+                        ctx.drawImage(img,310,220,30,30) // 25 add y
+                        ctx.drawImage(img,250,160,30,30) //-25 from x
+                        ctx.drawImage(img,250,200,30,30) //-25 from x
+                        ctx.drawImage(img,250,240,30,30) //-25 from x
+                        ctx.drawImage(img,240,270,30,30) //-25 from x
+                        ctx.drawImage(img,190,310,30,30) // -25 from x
+                        ctx.drawImage(img,175,305,30,30) // -25 from x
+                        ctx.drawImage(img,220,235,30,30) // -25 from y
+                        ctx.drawImage(img,180,230,30,30) // -25 from y
+                        ctx.drawImage(img,140,230,30,30) // -25 from y
+                        ctx.drawImage(img,115,210,30,30) // -25 from y
+                        ctx.drawImage(img,190,290,30,30) // 25 add to x
+                        ctx.drawImage(img,180,270,30,30) // 25 add to x
+                        ctx.drawImage(img,170,230,30,30) // 25 add to x
+                        ctx.drawImage(img,170,190,30,30) // 25 add to x
+                        ctx.drawImage(img,195,140,30,30) // 25 add to x
+                        ctx.drawImage(img,220,120,30,30) // 25 add to x
+                        ctx.drawImage(img,180,175,30,30) // 25 add to y      
+                    
+                    
+                    
+                    }
                         else {
                             let x = this.state.toppings.filter(toop=>toop.name!="Peperoni")
                             this.setState({
@@ -261,7 +435,7 @@ handleOlives=(e)=>{
                        // console.log(this.state.customizeTotal)
                         
                     }
-                    handleSausage=(e)=>{
+                    handleSausage=(e,canvas,img)=>{
  
                         //let pizza = e.target.parentElement.parentElement.querySelector("#root > div > div > div:nth-child(1) > div:nth-child(3) > p:nth-child(1)").innerText
                         //let price = e.target.parentElement.parentElement.querySelector("#root > div > div > div:nth-child(1) > div:nth-child(3) > p:nth-child(2)").innerText
@@ -278,7 +452,34 @@ handleOlives=(e)=>{
                                 toppings: newToppings,
                                 customizeTotal: this.state.customizeTotal + 0.50,
                                 sausage: false
-                            })}
+                            })
+                            const ctx = canvas.getContext("2d")
+                        ctx.drawImage(img,190,225,30,30) // 25 add y
+                        ctx.drawImage(img,230,225,30,30) // 25 add y
+                        ctx.drawImage(img,270,225,30,30) // 25 add y
+                        ctx.drawImage(img,310,245,30,30) // 25 add y
+                        ctx.drawImage(img,225,160,30,30) //-25 from x
+                        ctx.drawImage(img,225,200,30,30) //-25 from x
+                        ctx.drawImage(img,225,240,30,30) //-25 from x
+                        ctx.drawImage(img,215,270,30,30) //-25 from x
+                        ctx.drawImage(img,165,310,30,30) // -25 from x
+                        ctx.drawImage(img,150,305,30,30) // -25 from x
+                        ctx.drawImage(img,220,210,30,30) // -25 from y
+                        ctx.drawImage(img,180,205,30,30) // -25 from y
+                        ctx.drawImage(img,140,205,30,30) // -25 from y
+                        ctx.drawImage(img,115,185,30,30) // -25 from y
+                        ctx.drawImage(img,215,290,30,30) // 25 add to x
+                        ctx.drawImage(img,205,270,30,30) // 25 add to x
+                        ctx.drawImage(img,195,230,30,30) // 25 add to x
+                        ctx.drawImage(img,195,190,30,30) // 25 add to x
+                        ctx.drawImage(img,220,140,30,30) // 25 add to x
+                        ctx.drawImage(img,245,120,30,30) // 25 add to x
+                        ctx.drawImage(img,180,200,30,30) // 25 add to y
+                        
+                        
+                        
+                        
+                        }
                             else {
                                 let x = this.state.toppings.filter(toop=>toop.name!="Sausage")
                                 this.setState({
@@ -292,7 +493,7 @@ handleOlives=(e)=>{
                             
                         }
 
-                        handleBeef=(e)=>{
+                        handleBeef=(e,canvas,img)=>{
  
                             //let pizza = e.target.parentElement.parentElement.querySelector("#root > div > div > div:nth-child(1) > div:nth-child(3) > p:nth-child(1)").innerText
                             //let price = e.target.parentElement.parentElement.querySelector("#root > div > div > div:nth-child(1) > div:nth-child(3) > p:nth-child(2)").innerText
@@ -309,7 +510,40 @@ handleOlives=(e)=>{
                                     toppings: newToppings,
                                     customizeTotal: this.state.customizeTotal + 0.50,
                                     beef: false
-                                })}
+                                })
+                                const ctx = canvas.getContext("2d")
+
+                                ctx.drawImage(img,190,250,30,30) // 25 add y
+                                ctx.drawImage(img,230,250,30,30) // 25 add y
+                                ctx.drawImage(img,270,250,30,30) // 25 add y
+                                ctx.drawImage(img,310,270,30,30) // 25 add y
+                                ctx.drawImage(img,200,160,30,30) //-25 from x
+                                ctx.drawImage(img,200,200,30,30) //-25 from x
+                                ctx.drawImage(img,200,240,30,30) //-25 from x
+                                ctx.drawImage(img,190,270,30,30) //-25 from x
+                                ctx.drawImage(img,140,310,30,30) // -25 from x
+                                ctx.drawImage(img,125,305,30,30) // -25 from x
+                                ctx.drawImage(img,220,185,30,30) // -25 from y
+                                ctx.drawImage(img,180,180,30,30) // -25 from y
+                                ctx.drawImage(img,140,180,30,30) // -25 from y
+                                ctx.drawImage(img,115,160,30,30) // -25 from y
+                                ctx.drawImage(img,240,290,30,30) // 25 add to x
+                                ctx.drawImage(img,230,270,30,30) // 25 add to x
+                                ctx.drawImage(img,220,230,30,30) // 25 add to x
+                                ctx.drawImage(img,220,190,30,30) // 25 add to x
+                                ctx.drawImage(img,245,140,30,30) // 25 add to x
+                                ctx.drawImage(img,270,120,30,30) // 25 add to x
+                                ctx.drawImage(img,180,225,30,30) // 25 add to y
+                                
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            }
                                 else {
                                     let x = this.state.toppings.filter(toop=>toop.name!="Beef")
                                     this.setState({
@@ -323,7 +557,7 @@ handleOlives=(e)=>{
                                 
                             }
                             
-                            handleChicken=(e)=>{
+                            handleChicken=(e,canvas,img)=>{
  
                                 //let pizza = e.target.parentElement.parentElement.querySelector("#root > div > div > div:nth-child(1) > div:nth-child(3) > p:nth-child(1)").innerText
                                 //let price = e.target.parentElement.parentElement.querySelector("#root > div > div > div:nth-child(1) > div:nth-child(3) > p:nth-child(2)").innerText
@@ -340,7 +574,36 @@ handleOlives=(e)=>{
                                         toppings: newToppings,
                                         customizeTotal: this.state.customizeTotal + 0.50,
                                         chicken: false
-                                    })}
+                                    })
+                                    const ctx = canvas.getContext("2d")
+
+                                    ctx.drawImage(img,190,275,30,30) // 25 add y
+                                    ctx.drawImage(img,230,275,30,30) // 25 add y
+                                    ctx.drawImage(img,270,275,30,30) // 25 add y
+                                    ctx.drawImage(img,310,295,30,30) // 25 add y
+                                    ctx.drawImage(img,175,160,30,30) //-25 from x
+                                    ctx.drawImage(img,175,200,30,30) //-25 from x
+                                    ctx.drawImage(img,175,240,30,30) //-25 from x
+                                    ctx.drawImage(img,165,270,30,30) //-25 from x
+                                    ctx.drawImage(img,115,310,30,30) // -25 from x
+                                    ctx.drawImage(img,100,305,30,30) // -25 from x
+                                    ctx.drawImage(img,220,160,30,30) // -25 from y
+                                    ctx.drawImage(img,180,155,30,30) // -25 from y
+                                    ctx.drawImage(img,140,155,30,30) // -25 from y
+                                    ctx.drawImage(img,115,135,30,30) // -25 from y
+                                    ctx.drawImage(img,265,290,30,30) // 25 add to x
+                                    ctx.drawImage(img,255,270,30,30) // 25 add to x
+                                    ctx.drawImage(img,245,230,30,30) // 25 add to x
+                                    ctx.drawImage(img,245,190,30,30) // 25 add to x
+                                    ctx.drawImage(img,270,140,30,30) // 25 add to x
+                                    ctx.drawImage(img,295,120,30,30) // 25 add to x
+                                    ctx.drawImage(img,180,250,30,30) // 25 add to y     
+                                
+                                
+                                
+                                
+                                
+                                }
                                     else {
                                         let x = this.state.toppings.filter(toop=>toop.name!="Chicken")
                                         this.setState({
